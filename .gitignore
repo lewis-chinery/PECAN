@@ -1,0 +1,6 @@
+# Byte-compiled / optimized / DLL files
+*.pyc
+
+# PECAN training data
+data_epipred/*
+data_paratope/*
