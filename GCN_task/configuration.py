@@ -13,8 +13,8 @@ except:
 np.set_printoptions(precision=3)
 
 # Epitope of paratope prediction
-mode_experiment = "epitope"
-#mode_experiment = "paratope"
+#mode_experiment = "epitope"
+mode_experiment = "paratope"
 
 ## Directories
 
@@ -22,12 +22,17 @@ mode_experiment = "epitope"
 experiment_directory = "experiments/"
 
 # path to cpkl files
-data_directory = "../results_create_files_for_epitope/"
+#data_directory = "../results_create_files_for_epitope/"
 #data_directory = "../results_create_files_for_paratope/"
+data_directory = "../data_paratope/"
 
 # path to output directory
-output_directory = "../results_final/results_epitope_task/"
-#output_directory = "../results_final/results_paratope_task/"
+output_directory_head = "../results_final"
+if not os.path.exists(output_directory_head):
+    os.mkdir(output_directory_head)
+
+#output_directory = "../results_final/results_epitope_task/"
+output_directory = "../results_final/results_paratope_task/"
 
 if not os.path.exists(output_directory):
     os.mkdir(output_directory)
